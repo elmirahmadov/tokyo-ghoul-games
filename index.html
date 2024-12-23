@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Ghoul</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="logo">
+        <h1>PROJECT <span class="ghoul">GHOUL</span></h1>
+        <p class="japanese">グール</p>
+        <p class="subtitle">Insomnia</p>
+      </div>
+
+      <div class="main-menu">
+        <h2>Main Menu</h2>
+        <p class="subtext">WARTON // 22NY DISTRICT</p>
+        <button class="menu-button" id="start-game">
+          <a class="startgameA" href="./pages/startgame.html">Start Game</a>
+        </button>
+        <div id="loading" class="loading" style="display: none">
+          <p class="loading-text">Loading...</p>
+          <div class="loading-bar"></div>
+          <p class="progress-text">0%</p>
+        </div>
+
+        <button class="menu-button" id="options-button">Options</button>
+        <button class="menu-button">
+          <a class="startgameA" href="./pages/howtoplay.html" target="_blank"
+            >How to Play</a
+          >
+        </button>
+        <button class="menu-button" onclick="quitGame()">Quit</button>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-icon">T</span>
+        <div class="tip-text" onclick="openShareDialog()">
+          <strong>TIP</strong><br />
+          Click the “Join a Friend” button and get the link to join an online
+          friend’s group.
+        </div>
+      </div>
+
+      <div
+        class="options2"
+        id="options-div2"
+        style="display: none"
+        onclick="copyLink()"
+      >
+        <button class="copy-btn" id="copyButton">Copy Link</button>
+        <div class="message" id="successMessage" style="display: none">
+          Link copied successfully!
+        </div>
+      </div>
+
+      <div class="options" id="options-div" style="display: none">
+        <h3>Options</h3>
+        <button id="toggle-music">Turn Off Music</button>
+        <button id="close-options">Close Options</button>
+      </div>
+    </div>
+
+    <audio id="audio" autoplay loop>
+      <source
+        src="./music/anime-soundtrack_tokyo-ghoul-opening-unravel.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support audio playback.
+    </audio>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

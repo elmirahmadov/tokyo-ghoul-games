@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../access/games.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: darkslateblue;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.player,
+.enemy {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: url(../access/ready.gif);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 45%;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: darkorchid;
+}
+
+.choice-display {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: darkslateblue;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.choice-btn {
+  width: 150px;
+  padding: 15px 15px;
+  font-size: 20px;
+  background-color: darkslateblue;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.choice-btn:hover {
+  background-color: blueviolet;
+}
+
+#result {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#round-count {
+  font-weight: bold;
+  color: darkslateblue;
+}
+
+#result h2 {
+  font-size: 1.5em;
+  color: darkslateblue;
+  margin-bottom: 10px;
+}
+
+#result span {
+  font-weight: bold;
+  color: blueviolet;
+}
+
+#result-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#result-screen h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+#result-screen button {
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#result-screen button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}

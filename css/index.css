@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.background {
+  background-image: url(../access/main.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  text-align: center;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  letter-spacing: 5px;
+}
+
+.logo .ghoul {
+  color: red;
+  font-size: 80px;
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+.logo .japanese {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin-top: -20px;
+}
+
+.logo .subtitle {
+  font-size: 50px;
+  font-family: "Courier New", monospace;
+  color: #0096ff;
+  text-shadow: 0 0 15px rgba(0, 150, 255, 0.8), 0 0 30px rgba(0, 150, 255, 0.5);
+  margin-top: -10px;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  right: 2%;
+  text-align: center;
+  color: white;
+}
+
+.main-menu h2 {
+  font-size: 38px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.main-menu .subtext {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.menu-button {
+  width: 300px;
+  padding: 10px 0;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.tip-box {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.tip-icon {
+  background: red;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.tip-text {
+  font-size: 14px;
+  text-align: left;
+  color: white;
+}
+
+.options2 {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  height: 150px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.copy-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.message {
+  color: darkslateblue;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#options-div {
+  display: block;
+}
+
+.options {
+  display: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.options h3 {
+  color: #ecf0f1;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.options button {
+  width: 200px;
+  padding: 10px 0;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.options button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#toggle-music:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.startgameA {
+  text-decoration: none;
+  color: white;
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.loading-text {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.loading-bar {
+  width: 0%;
+  height: 8px;
+  background-color: darkslateblue;
+  border-radius: 5px;
+  margin-top: 20px;
+  animation: loadingAnimation 5s linear forwards;
+}
+
+.progress-text {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
