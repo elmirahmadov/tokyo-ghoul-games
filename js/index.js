@@ -49,6 +49,7 @@ startGameButton.addEventListener("click", function (event) {
 });
 
 function quitGame() {
+  window.open("", "_self");
   window.close();
 }
 
