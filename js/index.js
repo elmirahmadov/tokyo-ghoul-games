@@ -38,6 +38,7 @@ startGameButton.addEventListener("click", function (event) {
       clearInterval(interval);
       setTimeout(function () {
         window.location.href = startGameButton.querySelector("a").href;
+        loadingScreen.style.display = "none";
       }, 500);
     } else {
       width++;
@@ -48,7 +49,7 @@ startGameButton.addEventListener("click", function (event) {
 });
 
 function quitGame() {
-  window.location.href = "https://www.google.com";
+  window.close();
 }
 
 function openShareDialog() {
